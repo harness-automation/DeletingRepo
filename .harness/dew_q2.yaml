@@ -6,8 +6,6 @@ template:
   projectIdentifier: AmitTest
   orgIdentifier: default
   tags: {}
-  spec:
-    type: HarnessApproval
     timeout: 1d
     spec:
       approvalMessage: Please review the following information and approve the pipeline progression
