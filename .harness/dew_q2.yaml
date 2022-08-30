@@ -1,7 +1,6 @@
 template:
   name: dew
-  identifier: dew
-  versionLabel: q2
+
   type: Step
   projectIdentifier: AmitTest
   orgIdentifier: default
