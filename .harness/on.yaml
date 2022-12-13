@@ -14,7 +14,7 @@ pipeline:
           execution:
             steps:
               - step:
-                  name: dr
+                  name: jdr
                   identifier: d
                   type: HarnessApproval
                   timeout: 1d
