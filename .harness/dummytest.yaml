@@ -1,0 +1,31 @@
+pipeline:
+  name: dummytest
+  identifier: dummytest
+  projectIdentifier: dummyTest
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: asDFASD
+        identifier: asDFASD
+        description: ""
+        type: Approval
+        spec:
+          execution:
+            steps:
+              - step:
+                  name: sadfd
+                  identifier: sadfd
+                  type: HarnessApproval
+                  timeout: 1d
+                  spec:
+                    approvalMessage: |-
+                      Please review the following information
+                      and approve the pipeline progression
+                    includePipelineExecutionHistory: true
+                    approvers:
+                      minimumCount: 1
+                      disallowPipelineExecutor: false
+                      userGroups: <+input>
+                    approverInputs: []
+        tags: {}
