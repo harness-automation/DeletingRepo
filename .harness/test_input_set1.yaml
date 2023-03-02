@@ -1,0 +1,21 @@
+inputSet:
+  name: test input set1
+  identifier: test_input_set1
+  orgIdentifier: default
+  projectIdentifier: dummyTest
+  pipeline:
+    identifier: dummytest
+    stages:
+      - stage:
+          identifier: asDFASD
+          type: Approval
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: sadfd
+                    type: HarnessApproval
+                    spec:
+                      approvers:
+                        userGroups:
+                          - account._account_all_users
