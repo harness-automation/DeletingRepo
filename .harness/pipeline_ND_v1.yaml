@@ -1,0 +1,27 @@
+template:
+  name: pipeline ND
+  identifier: pipeline_ND
+  versionLabel: v1
+  type: Pipeline
+  projectIdentifier: testMigration1
+  orgIdentifier: default
+  tags: {}
+  spec:
+    stages:
+      - stage:
+          name: as
+          identifier: as
+          template:
+            templateRef: stage_tempalte_prod_3
+            versionLabel: v1
+            templateInputs:
+              type: Approval
+              spec:
+                execution:
+                  steps:
+                    - step:
+                        identifier: ds
+                        type: HarnessApproval
+                        spec:
+                          approvers:
+                            userGroups: <+input>
